@@ -1,7 +1,7 @@
 # edison-blink-node
 
 A simple node.js project to get you started with the [Intel Edison][edison-link] and [Resin.io][resin-link].
-This project uses the [MRAA][mraa-repo] library to toggle the onboard led (GPIO 13) of the Intel Edison arduino base board on and off.
+This project uses the [MRAA][mraa-repo] library to toggle the onboard led (GPIO 13) of the [Intel Edison arduino][edison-arduino-board] base board on and off.
 
 
 To get this project running on your intel edison, first checkout the ["Getting Started with Intel Edison"][getting-started page in the docs..
