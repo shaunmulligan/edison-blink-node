@@ -1,18 +1,19 @@
+# Gets latest base image from https://registry.hub.docker.com/u/resin/edison-node/
 FROM resin/edison-node:latest
+
 # Enable systemd
 ENV INITSYSTEM on
 
-RUN mkdir /usr/src/app
+# Copy package.json to root of container
+# This is copied independently for better caching.
+COPY package.json /usr/src/app/package.json
+
 WORKDIR /usr/src/app
-
-# Copy package.json to root in container.
-COPY package.json .
-
-# Install node modules
+# install all npm (node.js) dependencies
 RUN npm install
 
-# Copy the node.js source from app into /usr/src/app in our container
-COPY /app .
+# Copy our node.js source code into /usr/src/app
+COPY app/ /usr/src/app
 
-
-CMD ["npm start"]
+# Run the main.js script when the container starts on the device.
+CMD ["node", "/usr/src/app/main.js"]
