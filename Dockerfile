@@ -2,6 +2,7 @@ FROM resin/edison-node:latest
 # Enable systemd
 ENV INITSYSTEM on
 
+RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 # Copy package.json to root in container.
