@@ -21,4 +21,4 @@ Enjoy!!
 [mraa-repo]:https://github.com/intel-iot-devkit/mraa
 [getting-started]:http://docs.resin.io/#/pages/installing/getting-started-edison.md
 [signup-link]:https://dashboard.resin.io/signup
-[provison-an-edison]:http://docs.resin.io/#/pages/installing/getting-started-edison.md#adding-your-first-edison-device
+[provison-an-edison]:http://docs.resin.io/#/pages/installing/gettingStarted-Edison.md#adding-your-first-edison-device
